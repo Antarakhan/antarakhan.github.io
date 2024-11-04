@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Technical Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Resume/Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards & Leadership</a></li>
                 </ul>
             </div>
@@ -46,16 +46,29 @@
                     </div>
                     <p class="lead mb-5">Software Engineer</p>
                     <div class="social-icons">
-                        <a class="social-icon" href="https://linkedin.com/in/antarakhan"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/Antarakhan"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="https://linkedin.com/in/antarakhan" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/Antarakhan" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" onclick="downloadResume()" href="./portfolio/assets/Antara_Khan_Resume_2024.pdf" 
+                        download="Antara_Khan_Resume_2024.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-file-download"></i></a> 
                     </div>
+                </a>
                 </div>
             </section>
             <hr class="m-0" />
             <!-- Skills-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Technical Skills</h2>
+                    <h2 class="mb-5">Resume/Skills</h2>
+                    <div class="subheading mb-3">Download or scan resume</div>
+                    <div class="social-icons">
+                        <a id="resume" class="social-icon" onclick="downloadResume()" href="./portfolio/assets/Antara_Khan_Resume_2024.pdf" 
+                        download="Antara_Khan_Resume_2024.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-file-download"></i></a> 
+                    </div>
+                    <div id="qr-code-container">
+                        <img class="img-fluid img-profile qr-code mx-auto mb-6" src="./portfolio/assets/img/resume_qr.png" alt="QR Code for Antara Khan's Resume">
+                    </div>
                     <div class="subheading mb-3">Programming Languages & Tools</div>
                     <ul class="list-inline dev-icons">
                         <li class="list-inline-item"><i class="fab fa-python"></i></li>
@@ -63,7 +76,6 @@
                         <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
                         <li class="list-inline-item"><i class="fab fa-html5"></i></li>
                         <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
                         <li class="list-inline-item"><i class="fab fa-react"></i></li>
                         <li class="list-inline-item"><i class="fab fa-jenkins"></i></li>
                     </ul>
@@ -76,10 +88,6 @@
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
                             Fullstack: build APIs, responsive UIs and create databases
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            DevOps: automate workflows and applications
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
